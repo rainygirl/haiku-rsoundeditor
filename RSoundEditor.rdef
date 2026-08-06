@@ -1,0 +1,27 @@
+resource app_signature "application/x-vnd.RSoundEditor";
+
+/* B_SINGLE_LAUNCH: the roster brings the existing window forward instead of
+   starting a second copy, which would register a competing set of media
+   nodes. */
+resource app_flags B_SINGLE_LAUNCH;
+
+resource app_version {
+	major  = 1,
+	middle = 0,
+	minor  = 0,
+	variety = B_APPV_FINAL,
+	internal = 0,
+	short_info = "R Sound Editor",
+	long_info  = "Record with a live waveform, then play back and edit."
+};
+
+/* Waveform icon, HVIF: a dark tile carrying five bars on a centre line, in the
+   same green the app draws its trace in. Vector, so it stays sharp at every
+   Deskbar and Tracker icon size. Generated -- all coordinates are whole
+   numbers on the 64x64 grid, which keeps them to HVIF's one-byte form. */
+resource(101, "BEOS:ICON") #'VICN' array {
+	$"6E6369660301CDCDD7FF011A1A20FF0178DC8CFF070A082B2155215F2B5F5555"
+	$"5F2B5F2155212B0A082C2354235D2C5D54545D2C5D2354232C0A0424362C362C"
+	$"4A244A0A04302B382B385530550A043C324432444E3C4E0A0448285028505848"
+	$"580A0454375C375C495449030A000100000A010101000A0205020304050600"
+};
