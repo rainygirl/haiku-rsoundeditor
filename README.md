@@ -16,6 +16,8 @@ The recording is held in memory as float frames, so every edit (cut, gain, speed
 
 Haiku OS (x86 or x86_64). Build it on the machine you are going to run it on — no cross-compiler needed.
 
+Also builds and runs on arm64, cross-compiled against the Haiku kits; it needs nothing outside them.
+
 ## Install
 
 ```sh
